@@ -1,0 +1,36 @@
+save_dir: ./logs
+root_dir: /home/yyf/Workspace/NeRF/datasets/nerf_synthetic_abc_dataset_final_num50/00000952
+exp_name: '00000952'
+dataset_name: blender
+img_wh:
+- 400
+- 400
+spheric_poses: false
+N_emb_xyz: 10
+N_emb_dir: 4
+N_samples: 64
+N_importance: 64
+use_disp: false
+perturb: 1.0
+noise_std: 0.0
+batch_size: 1024
+chunk: 32768
+num_epochs: 6
+num_gpus: 1
+ckpt_path: null
+prefixes_to_ignore:
+- loss
+weight_path: null
+optimizer: adam
+lr: 0.0005
+momentum: 0.9
+weight_decay: 0
+lr_scheduler: steplr
+warmup_multiplier: 1.0
+warmup_epochs: 0
+decay_step:
+- 2
+- 4
+- 8
+decay_gamma: 0.5
+poly_exp: 0.9
