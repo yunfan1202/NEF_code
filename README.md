@@ -30,7 +30,7 @@ We introduce `ABC-NEF` dataset, which contains 115 distinct and challenging CAD 
 
 We apply [BlenderProc](https://github.com/DLR-RM/BlenderProc) to render multi-view images for each CAD model, and use pre-trained [PiDiNet](https://github.com/zhuoinoulu/pidinet) to detect 2D edges.
 
-The entire BlenderProc projects used in this project can be downloaded [Here](https://drive.google.com/file/d/155rPkcJyBGRnyrG4Fu5mLAcTWCFTM8Ue/view). For more details about the ABC dataset, see BlenderProc_NEF/examples/datasets/abc_dataset/main.py for references.
+The entire BlenderProc project used in this project can be downloaded [Here](https://drive.google.com/file/d/155rPkcJyBGRnyrG4Fu5mLAcTWCFTM8Ue/view). For more details about the ABC dataset, see BlenderProc_NEF/examples/datasets/abc_dataset/main.py for references.
 
 The rendered multi-view images and detected 2D edges are available at [Baidu Disk](https://pan.baidu.com/s/1c-UMN_rN5v_sVtJSqHeVPw?pwd=zapt) or [Google Drive](https://drive.google.com/file/d/1U8wbq28165SwPHVxUrFIcan4iHM8jD_7/view?usp=share_link).
 
