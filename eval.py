@@ -31,7 +31,7 @@ def get_opts():
                         help='which dataset to validate')
     parser.add_argument('--scene_name', type=str, default='00000006',
                         help='scene name, used as output folder name')
-    parser.add_argument('--split', type=str, default='train',
+    parser.add_argument('--split', type=str, default='video',
                         help='test or test_train')
     parser.add_argument('--img_wh', nargs="+", type=int, default=[400, 400],
                         help='resolution (img_w, img_h) of the image')
