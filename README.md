@@ -2,7 +2,7 @@
 
 :star:PyTorch implementation of the paper:
 
-NEF: Neural Edge Fields for 3D Parametric Curve Reconstruction from Multi-view Images [[arXiv](https://arxiv.org/abs/2303.07653)] [[Project Page](https://yunfan1202.github.io/NEF/)].
+NEF: Neural Edge Fields for 3D Parametric Curve Reconstruction from Multi-view Images [[Paper](https://openaccess.thecvf.com/content/CVPR2023/papers/Ye_NEF_Neural_Edge_Fields_for_3D_Parametric_Curve_Reconstruction_From_CVPR_2023_paper.pdf)] [[Project Page](https://yunfan1202.github.io/NEF/)].
 
 [Yunfan Ye](https://yunfan1202.github.io), [Renjiao Yi](https://renjiaoyi.github.io/), [Zhirui Gao](), [Chenyang Zhu](http://www.zhuchenyang.net/), [Zhiping Cai](), [Kai Xu](http://kevinkaixu.net/index.html).
 
