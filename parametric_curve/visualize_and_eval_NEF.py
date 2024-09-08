@@ -39,15 +39,15 @@ def visualize_pred_gt(all_pred_points, all_gt_points, name, save_fig=False, show
         plt.show()
 
 
-def sample_points_by_grid(pred_points, num_voxels_per_axis=64):
-    normals = pcu.estimate_point_cloud_normals_knn(pred_points, 16)[1]
+def sample_points_by_grid(pred_points, num_voxels_per_axis=64, min_bound=None, max_bound=None):
     bbox_size = np.array([1, 1, 1])
     # The size per-axis of a single voxel
     sizeof_voxel = bbox_size / num_voxels_per_axis
-    pred_sampled, _, _ = pcu.downsample_point_cloud_voxel_grid(sizeof_voxel, pred_points, normals)
-    pred_sampled = pred_sampled.astype(np.float32)
-    return pred_sampled
 
+    # Use the existing function to downsample the point cloud based on voxel size
+    pred_sampled = pcu.downsample_point_cloud_on_voxel_grid( sizeof_voxel, pred_points, min_bound=min_bound, max_bound=max_bound )
+
+    return pred_sampled.astype(np.float32)
 
 def get_pred_points(json_path, curve_type="cubic", sample_num=100):
     with open(json_path, 'r') as f:
