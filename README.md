@@ -26,7 +26,7 @@ This code has been tested with Ubuntu 18.04, one 3080Ti GPU with CUDA 11.4, Pyth
 
 ## :evergreen_tree:Dataset
 
-We introduce `ABC-NEF` dataset, which contains 115 distinct and challenging CAD models selected from [Chunk 0000](https://archive.nyu.edu/handle/2451/44309) of the [ABC dataset](https://cs.nyu.edu/~zhongshi/publication/abc-dataset/).
+We introduce `ABC-NEF` dataset, which contains 115 distinct and challenging CAD models selected from [Chunk 0000](https://archive.nyu.edu/handle/2451/44309) of the [ABC dataset](https://archive.nyu.edu/handle/2451/43778).
 
 We apply [BlenderProc](https://github.com/DLR-RM/BlenderProc) to render multi-view images for each CAD model, and use pre-trained [PiDiNet](https://github.com/zhuoinoulu/pidinet) to detect 2D edges.
 
